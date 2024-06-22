@@ -1,0 +1,29 @@
+{% extends "index.html" %}      
+{% block content %}		
+<head>
+	<style>
+
+		@keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .welcome-text{
+            animation: fadeIn 2s;
+			font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+			letter-spacing: 5px;
+			text-shadow: none;
+        }
+	</style>
+</head>
+	
+
+<div class="overlay">
+	<div class="welcome-text">
+		{% if user.is_authenticated %}				
+		<h1>Welcome:{{user.username}}<h1>					
+	{% else %}
+		<h1>WELCOME TO OUR WEBSITE</h1>
+	{% endif %}	
+{% endblock %}
+	</div>
+</div>

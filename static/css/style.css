@@ -1,0 +1,24 @@
+.navbar{
+    font-family:times new roman;
+	padding:5px;
+	background-color: transparent !important;
+}
+
+
+.navbar-inverse .navbar-nav>li>a {
+	color: rgb(170, 87, 248);
+	font-size:20px;
+
+}
+.navbar-inverse .navbar-nav>li>a:hover{
+    transition: all;
+	font-size:20px;
+}
+
+h1{
+	position:absolute;
+	top:20%;
+	left:50%;	
+	transform:translate(-50%,-50%);
+}
+

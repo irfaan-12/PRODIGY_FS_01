@@ -1,0 +1,28 @@
+{% include "header.html" %}
+{% include "navbar.html" %}
+<html>	
+    <head>	
+		  <title>Navbar</title>	
+		  
+		  <style>
+			body{
+				background-image: url('/static/background/pic1.jpg');
+                 background-size: cover;
+                 background-position: center;
+                 background-repeat: no-repeat;
+				}
+
+		  </style>
+    </head>
+	<body>             
+		{% block content %}		      
+
+		{% endblock %}
+    </body>
+</html>
+<script>
+	$(document).ready(function(){
+		$(".alert").hide(4000);
+	});
+</script>
+        
